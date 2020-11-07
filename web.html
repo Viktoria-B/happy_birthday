@@ -9,6 +9,8 @@
         
         <style>
 
+<<<<<<< HEAD
+=======
             /*mobile style*/
             @media only screen and (max-width: 412px) {
                 body {
@@ -16,65 +18,119 @@
                 }
             }
 
+>>>>>>> 9439f0130fab4d9f18a16ca3dc6d4cee0c01685e
             *{
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
                 text-align: center;
             }
-            
+
             body {
-                margin: 60px 250px;
-                background: #02010a;
+                background-color: #02010a;
             }
-            
+
             header {
                 color: #fff;
                 font-family: 'Bungee Shade', cursive;
-                font-size: 45px;
                 letter-spacing: 0.2em;
-                line-height: 1.7em;
                 transition: color 400ms ease-out;
             }
-            
+
             header:hover {
                 color: #B298DC;
             }
-            
+
             article {
-                margin: 0px 180px;
                 color: #fff;
                 font-family: 'Encode Sans Expanded', sans-serif;
             }
-            
-            figcaption {
-                margin-top: 5px;
-                color: #fff;
-                font-family: 'Encode Sans Expanded', sans-serif;
-                font-size: 10px;
-                font-style: italic;
-                letter-spacing: 0.3em;
-            }
-            
+
             .grid {
-                margin-top: 40px;
-                padding: 60px 70px;
                 background: #31166d;
                 display: grid;
-                grid-template: repeat(6, 1fr) / repeat(3, 1fr);
-                grid-gap: 40px 30px;
                 justify-content: center;
                 align-content: center;
             }
-            
-            img {
-                width: 200px;
-                border-radius: 20px;
-                transition: border-radius 900ms ease-out;
+
+            figcaption {
+                color: #fff;
+                margin-top: 5px;
+                font-family: 'Encode Sans Expanded', sans-serif;
+                font-style: italic;
             }
             
-            img:hover {
-                border-radius: 100%;
+            /*mobile style*/
+            @media only screen and (max-width: 412px) {
+                body {
+                    margin-top: 30px;
+                }
+
+                header {
+                    font-size: 70px;
+                    line-height: 1em;
+                }
+
+                article {
+                    margin: 15px 30px;
+                    word-spacing: 0.3em;
+                }
+
+                .grid {
+                    grid-template: repeat(9, 1fr) / repeat(2, 1fr);
+                    margin-top: 30px;
+                    padding: 40px 10px;
+                    grid-gap: 20px 0px;
+                }
+
+                figcaption {
+                    font-size: 11px;
+                    letter-spacing: 0.2em;
+                }
+
+                img {
+                    width: 160px;
+                    border-radius: 20px;
+                }
+            }
+
+            /*laptop style*/
+            @media only screen and (min-width: 960px) {
+                body {
+                    margin: 60px 250px;
+                }
+                
+                header {
+                    font-size: 45px;
+                    line-height: 1.7em;
+                }
+                
+                article {
+                    margin: 0px 180px;
+                }
+                
+                figcaption {
+                    font-family: 'Encode Sans Expanded', sans-serif;
+                    font-size: 10px;
+                    letter-spacing: 0.3em;
+                }
+                
+                .grid {
+                    grid-template: repeat(6, 1fr) / repeat(3, 1fr);
+                    margin-top: 40px;
+                    padding: 60px 70px;
+                    grid-gap: 40px 30px;
+                }
+                
+                img {
+                    width: 200px;
+                    border-radius: 20px;
+                    transition: border-radius 900ms ease-out;
+                }
+                
+                img:hover {
+                    border-radius: 100%;
+                }
             }
         </style>
     </head>
@@ -86,6 +142,8 @@
         
         <article>
             <p>hey man, you&#x27;re 18 now finally. that&#x27;s pretty cool. now you&#x27;re gonna be able to start adulthood and do whatever you want. (don&#x27;t be stupid though)</p>
+            <br>
+            <p>anyway here&#x27;s a playlist for you:</p>
         </article>
         
         <main class="grid">
